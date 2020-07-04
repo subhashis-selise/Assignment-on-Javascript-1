@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var ar = new Array(4);
+		var i,j,cnt=1;
+	    for(i=0; i<ar.length; i++) 
+	    {
+	      ar[i] = new Array(4);
+	    }
+		for(i=0;i<4;i++)
+		{
+			for(j=0;j<4;j++)
+			{
+				ar[i][j]=cnt++;
+			}
+		}
+		for(i=0;i<4;i++)
+		{
+			for(j=0;j<4;j++)
+			{
+				document.write(ar[i][j]+' ');
+			}
+			document.write("<br>"); 
+		}
+	</script>
+</body>
+</html>

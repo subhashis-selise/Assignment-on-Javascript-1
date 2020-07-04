@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+   <script >
+       function WordsCount(text) 
+       {
+           let ar = text.split(" ");
+           while (ar.indexOf("") != -1) 
+           {
+               let index = ar.indexOf("");
+               ar.splice(index, 1);
+           }
+           let ShowingValue = "<h3>The numbers of words are = " + ar.length + "</h3><p>The words are --> ";
+           for (i = 0; i < ar.length; i++)
+               ShowingValue += ar[i] + " ";
+           ShowingValue += "</p>";
+           document.write(ShowingValue);
+       }
+       let word="Hello everyone";
+       WordsCount(word);
+   </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var myArray = [1, 30, 40,2, 50,4, 10,80, 20,100];
+		var big = myArray[0];
+		var nexbig = myArray[0];
+		// console.log(nexbig);
+	    for(var i=0;i<10;i++)
+	    {
+	        if(myArray[i]>big){
+	            nexbig = big;
+	            big = myArray[i];
+	        }
+	        else if(myArray[i]>nexbig && myArray[i]!=big)
+	            nexbig = myArray[i];
+	    }
+	   	console.log(nexbig);
+	   	var small = 200; 
+		var secondsmall = 200; 
+		for (var i = 0; i < 10; i++) 
+		{
+		    if (myArray[i] < small) 
+		    {
+		        secondsmall = small;
+		        small = myArray[i];
+		    } 
+		    else if (myArray[i] < secondsmall) 
+		    {
+		        secondsmall = myArray[i];
+		    }
+		}
+		console.log(secondsmall);
+	</script>
+</body>
+</html>
